@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --width: 33.3vw;
+    --height: 33.3vh;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box {
+    width: var(--width);
+    height: var(--height);
+    transition: ease-in 2s;
+}
+.box:nth-of-type(4n){
+    background-color: antiquewhite;
+}
+.box:nth-of-type(4n+1){
+    background-color: aliceblue;
+}
+.box:nth-of-type(4n+2){
+    background-color: whitesmoke;
+}
+.box:nth-of-type(4n+2){
+    background-color: azure;
+}
+
+.box:hover {
+    background-color: brown;
+}
